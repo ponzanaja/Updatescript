@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [ -s /project1/checksize.txt ];then #this is  non zero
+if [ -f /project1/ArpNode3/update ];then #this is  non zero
 	echo "Update system command received" #true
-	./update.sh
+	pwd
+	../Updatescript/update.sh
 else 
 	echo "There're no update command" #false
 fi
